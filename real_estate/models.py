@@ -1,10 +1,5 @@
 from django.db import models
 
-# Create your models here.
-class admins(models.Model):
-    name = models.CharField(max_length=100)
-    email = models.EmailField()
-    password = models.CharField(max_length=100)
 
 class property_table(models.Model):
     """Model definition for property_table.
