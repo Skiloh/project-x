@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    background-color: hsl(241, 95%, 17%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 2rem;
+    padding: 0 20px;
+}
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+}
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+}
+.nav li {
+    position: relative; /* Add this to position the ::after pseudo-element relative to the list item */
+}
+
+.nav li:hover {
+    background-color: hwb(250 22% 76%)
+}
+
+.nav li:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: hwb(0 2% 5%); /* Set your desired underline color */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out; /* Add this to animate the line */
+}
+
+
+.nav li:hover::after {
+    transform: scaleX(1); /* Scale the line to full width on hover */
+}
