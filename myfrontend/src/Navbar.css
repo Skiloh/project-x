@@ -15,6 +15,17 @@ body {
     align-items:center;
     gap: 2rem;
     padding: 0 20px;
+    width: 100%;
+
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start;
+        gap: 1rem; /* Reduce gap between items */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
 }
 
 .nav a {

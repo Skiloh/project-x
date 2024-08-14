@@ -1,0 +1,59 @@
+/* Style for the dropdown container */
+.dropdown-container {
+  display: flex !important;
+  flex-direction: row !important; /* Ensures horizontal alignment */
+  gap: 1rem;
+  margin: 20px 0;
+  align-items: center; /* Vertically center items */
+  flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+}
+
+/* Style for individual dropdowns */
+.select-container {
+  display: flex;
+  align-items: center;
+}
+
+.select-container label {
+  margin-right: 0.5rem; /* Space between label and dropdown */
+}
+/* Style for react-select dropdowns */
+.Select__control {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.Select__control:hover {
+  border-color: #888;
+}
+
+.Select__control--is-focused {
+  border-color: #555;
+  box-shadow: 0 0 0 1px #555;
+}
+
+/* Style for placeholder text */
+.Select__placeholder {
+  color: #888;
+}
+
+/* Style for the filter button */
+.filter-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter-button:hover {
+  background-color: #0056b3;
+}
+
+.filter-button:active {
+  background-color: #003d80;
+}
