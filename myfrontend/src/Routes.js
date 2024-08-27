@@ -1,6 +1,5 @@
-
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import { Home } from './pages/home';
+import Home from './pages/Home';
 import Buy from './pages/Buy';
 import Dev from './pages/Developments';
 import Sold from './pages/Sold';
